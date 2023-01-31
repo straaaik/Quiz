@@ -1,0 +1,59 @@
+@import "_nullstyle";
+
+body{
+    background-color: rgb(245, 192, 192);
+}
+
+.quiz{
+    margin: 0 auto;
+    width: 600px;
+    background-color: #fff;
+}
+.quiz-questions {
+}
+.quiz-questions-item, .quiz-results-item {
+
+		&__question {
+            font-size: 30px;
+            margin: 0 0 20px 0;
+            color: red;
+		}
+
+		&__answers {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+		}
+}
+.quiz-results {
+}
+.quiz-indicator {
+    text-align: right;
+}
+.quiz-controls {
+}
+.btn-next {
+}
+.btn-restart {
+    display: none;
+}
+
+.quiz-results{
+    display: none;
+}
+
+.indicator--hidden,
+.btnNext--hidden{
+display: none;
+}
+.results--visible,
+.btnRestart--visible{
+display: block;
+}
+
+.answer--invalid{
+    color: red;
+}
+
+.answer--valid{
+    color: green;
+}
