@@ -90,31 +90,98 @@ h6 {
 
 /*--------------------*/
 body {
-  background-color: rgb(245, 192, 192);
+  background-color: #2357ac;
 }
 
 .quiz {
-  margin: 0 auto;
+  margin: 120px auto;
   width: 600px;
-  background-color: #fff;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 15px 10px #083881;
+          box-shadow: 0px 15px 10px #083881;
 }
 
 .quiz-questions-item__question, .quiz-results-item__question {
+  font-family: Nunito;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
   font-size: 30px;
   margin: 0 0 20px 0;
-  color: red;
+  color: rgb(0, 0, 0);
+}
+.quiz-questions-item__question::after, .quiz-results-item__question::after {
+  content: " ";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 500px;
+  height: 1px;
+  background-color: #d7d7d7;
 }
 .quiz-questions-item__answers, .quiz-results-item__answers {
+  font-family: Nunito;
   font-size: 18px;
   margin: 0 0 20px 0;
+  color: rgb(0, 0, 0);
+}
+.quiz-questions-item__answers li, .quiz-results-item__answers li {
+  margin-top: 8px;
+}
+.quiz-questions-item__answers li:hover, .quiz-results-item__answers li:hover {
+  text-shadow: 0px 0px 4px #3673d7;
 }
 
 .quiz-indicator {
   text-align: right;
 }
 
+.btn-next {
+  color: rgba(35, 88, 172, 0.5607843137);
+  width: 200px;
+  height: 40px;
+  background-color: rgba(35, 88, 172, 0.5607843137);
+  -webkit-box-shadow: 0 2px 8px #03327c;
+          box-shadow: 0 2px 8px #03327c;
+  border-radius: 20px;
+  font-family: Nunito;
+  font-size: 16px;
+}
+.btn-next::after {
+  content: " ";
+}
+.btn-next:enabled {
+  color: #ffffff;
+  background-color: #2357ac;
+}
+.btn-next:hover {
+  background-color: #598ad8;
+}
+
 .btn-restart {
+  margin: 0px auto;
+  margin-top: 50px;
+  color: rgba(35, 88, 172, 0.5607843137);
+  width: 200px;
+  height: 40px;
+  background-color: rgba(35, 88, 172, 0.5607843137);
+  -webkit-box-shadow: 0 2px 8px #03327c;
+          box-shadow: 0 2px 8px #03327c;
+  border-radius: 20px;
+  font-family: Nunito;
+  font-size: 16px;
   display: none;
+}
+.btn-restart::after {
+  content: " ";
+}
+.btn-restart:enabled {
+  color: #ffffff;
+  background-color: #2357ac;
+}
+.btn-restart:hover {
+  background-color: #598ad8;
 }
 
 .quiz-results {
